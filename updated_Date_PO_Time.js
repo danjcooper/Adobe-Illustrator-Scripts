@@ -62,7 +62,7 @@ function setORderNameAndNumber() {
   var newNumber = FileName.replace(FileName, "");
 
   // Update Proof to new Varables
-  app.activeDocument.textFrames.getByName("ORDER_NAME").contents = FileName;
+  app.activeDocument.textFrames.getByName("ORDER_NAME").contents = op;
 
   //if the order number is blank call it visual
   if (newNumber == "") {
