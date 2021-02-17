@@ -43,7 +43,6 @@ function setORderNameAndNumber() {
   for (var i = 0; i < regexArr.length; i++) {
     op = op.replace(regexArr[i], "");
 
-    alert(op)
   }
 
   /*
