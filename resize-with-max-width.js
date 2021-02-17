@@ -65,7 +65,7 @@ for (var i = 0; i < docRef.groupItems.length; i++) {
         docRef.groupItems[i].resize(increasePercent, increasePercent)
     }
     app.activeDocument.groupItems[i].name = 'I Am Group ' + i
-    app.activeDocument.groupItems[i].locked = true
+    //app.activeDocument.groupItems[i].locked = true
 
 }
 
