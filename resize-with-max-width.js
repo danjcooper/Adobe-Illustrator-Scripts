@@ -9,25 +9,28 @@ var docRef = app.activeDocument;
 Code for Import https://scriptui.joonas.me — (Triple click to select): 
 */
 
+
+/*
+Code for Import https://scriptui.joonas.me — (Triple click to select): 
+{"activeId":7,"items":{"item-0":{"id":0,"type":"Dialog","parentId":false,"style":{"enabled":true,"varName":null,"windowType":"Dialog","creationProps":{"su1PanelCoordinates":false,"maximizeButton":false,"minimizeButton":false,"independent":false,"closeButton":true,"borderless":false,"resizeable":false},"text":"Dialog","preferredSize":[0,0],"margins":16,"orientation":"column","spacing":10,"alignChildren":["center","top"]}},"item-1":{"id":1,"type":"Panel","parentId":0,"style":{"enabled":true,"varName":null,"creationProps":{"borderStyle":"etched","su1PanelCoordinates":false},"text":"Max Size Info","preferredSize":[300,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-3":{"id":3,"type":"Panel","parentId":0,"style":{"enabled":true,"varName":null,"creationProps":{"borderStyle":"etched","su1PanelCoordinates":false},"text":"Spacing Info","preferredSize":[300,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-4":{"id":4,"type":"Group","parentId":1,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["right","center"],"alignment":null}},"item-5":{"id":5,"type":"EditText","parentId":4,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-6":{"id":6,"type":"StaticText","parentId":4,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Max Width","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-7":{"id":7,"type":"StaticText","parentId":9,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Max Height","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-8":{"id":8,"type":"EditText","parentId":9,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-9":{"id":9,"type":"Group","parentId":1,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-10":{"id":10,"type":"StaticText","parentId":12,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Horizontal Spacing","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-11":{"id":11,"type":"EditText","parentId":12,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":"top","helpTip":null}},"item-12":{"id":12,"type":"Group","parentId":3,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-13":{"id":13,"type":"Group","parentId":3,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-14":{"id":14,"type":"StaticText","parentId":13,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Vertical Spacing","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-15":{"id":15,"type":"EditText","parentId":13,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-16":{"id":16,"type":"Checkbox","parentId":0,"style":{"enabled":true,"varName":null,"text":"Rotate Designs","preferredSize":[0,0],"alignment":null,"helpTip":"Use this for text which is always wider then heigh","checked":false}},"item-17":{"id":17,"type":"Panel","parentId":0,"style":{"enabled":true,"varName":null,"creationProps":{"borderStyle":"etched","su1PanelCoordinates":false},"text":"Document Settings","preferredSize":[300,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-18":{"id":18,"type":"Group","parentId":17,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-19":{"id":19,"type":"EditText","parentId":18,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-20":{"id":20,"type":"StaticText","parentId":18,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Max Line Width","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":"The max line width. You should make this the width of the material you're using."}},"item-21":{"id":21,"type":"Group","parentId":0,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-22":{"id":22,"type":"Button","parentId":21,"style":{"enabled":true,"varName":null,"text":"Submit","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-23":{"id":23,"type":"Button","parentId":21,"style":{"enabled":true,"varName":null,"text":"Cancel","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}}},"order":[0,1,4,6,5,9,7,8,3,12,10,11,13,14,15,17,18,20,19,16,21,23,22],"settings":{"importJSON":true,"indentSize":false,"cepExport":false,"includeCSSJS":true,"showDialog":true,"functionWrapper":false,"afterEffectsDockable":false,"itemReferenceList":"None"}}
+*/ 
+
 // DIALOG
 // ======
 var dialog = new Window("dialog"); 
     dialog.text = "Dialog"; 
     dialog.orientation = "column"; 
-    dialog.alignChildren = ["right","center"]; 
+    dialog.alignChildren = ["center","top"]; 
     dialog.spacing = 10; 
     dialog.margins = 16; 
-
-var statictext1 = dialog.add("statictext", undefined, undefined, {name: "statictext1"}); 
-    statictext1.text = "Max Width / Height"; 
-    statictext1.alignment = ["center","center"]; 
 
 // PANEL1
 // ======
 var panel1 = dialog.add("panel", undefined, undefined, {name: "panel1"}); 
-    panel1.text = "Sizing"; 
+    panel1.text = "Max Size Info"; 
+    panel1.preferredSize.width = 300; 
     panel1.orientation = "column"; 
-    panel1.alignChildren = ["left","center"]; 
+    panel1.alignChildren = ["left","top"]; 
     panel1.spacing = 10; 
     panel1.margins = 10; 
 
@@ -35,14 +38,13 @@ var panel1 = dialog.add("panel", undefined, undefined, {name: "panel1"});
 // ======
 var group1 = panel1.add("group", undefined, {name: "group1"}); 
     group1.orientation = "row"; 
-    group1.alignChildren = ["left","center"]; 
+    group1.alignChildren = ["right","center"]; 
     group1.spacing = 10; 
     group1.margins = 0; 
 
-var statictext2 = group1.add("statictext", undefined, undefined, {name: "statictext2"}); 
-    statictext2.helpTip = "in mm"; 
-    statictext2.text = "Max Width:"; 
-    statictext2.preferredSize.width = 75; 
+var statictext1 = group1.add("statictext", undefined, undefined, {name: "statictext1"}); 
+    statictext1.text = "Max Width"; 
+    statictext1.preferredSize.width = 120; 
 
 var edittext1 = group1.add('edittext {properties: {name: "edittext1"}}'); 
     edittext1.preferredSize.width = 150; 
@@ -55,32 +57,119 @@ var group2 = panel1.add("group", undefined, {name: "group2"});
     group2.spacing = 10; 
     group2.margins = 0; 
 
-var statictext3 = group2.add("statictext", undefined, undefined, {name: "statictext3"}); 
-    statictext3.text = "Max Height:"; 
-    statictext3.preferredSize.width = 75; 
+var statictext2 = group2.add("statictext", undefined, undefined, {name: "statictext2"}); 
+    statictext2.text = "Max Height"; 
+    statictext2.preferredSize.width = 120; 
 
 var edittext2 = group2.add('edittext {properties: {name: "edittext2"}}'); 
     edittext2.preferredSize.width = 150; 
 
+// PANEL2
+// ======
+var panel2 = dialog.add("panel", undefined, undefined, {name: "panel2"}); 
+    panel2.text = "Spacing Info"; 
+    panel2.preferredSize.width = 300; 
+    panel2.orientation = "column"; 
+    panel2.alignChildren = ["left","top"]; 
+    panel2.spacing = 10; 
+    panel2.margins = 10; 
+
+// GROUP3
+// ======
+var group3 = panel2.add("group", undefined, {name: "group3"}); 
+    group3.orientation = "row"; 
+    group3.alignChildren = ["left","center"]; 
+    group3.spacing = 10; 
+    group3.margins = 0; 
+
+var statictext3 = group3.add("statictext", undefined, undefined, {name: "statictext3"}); 
+    statictext3.text = "Horizontal Spacing"; 
+    statictext3.preferredSize.width = 120; 
+
+var edittext3 = group3.add('edittext {properties: {name: "edittext3"}}'); 
+    edittext3.preferredSize.width = 150; 
+    edittext3.alignment = ["left","top"]; 
+
+// GROUP4
+// ======
+var group4 = panel2.add("group", undefined, {name: "group4"}); 
+    group4.orientation = "row"; 
+    group4.alignChildren = ["left","center"]; 
+    group4.spacing = 10; 
+    group4.margins = 0; 
+
+var statictext4 = group4.add("statictext", undefined, undefined, {name: "statictext4"}); 
+    statictext4.text = "Vertical Spacing"; 
+    statictext4.preferredSize.width = 120; 
+
+var edittext4 = group4.add('edittext {properties: {name: "edittext4"}}'); 
+    edittext4.preferredSize.width = 150; 
+
+// PANEL3
+// ======
+var panel3 = dialog.add("panel", undefined, undefined, {name: "panel3"}); 
+    panel3.text = "Document Settings"; 
+    panel3.preferredSize.width = 300; 
+    panel3.orientation = "column"; 
+    panel3.alignChildren = ["left","top"]; 
+    panel3.spacing = 10; 
+    panel3.margins = 10; 
+
+// GROUP5
+// ======
+var group5 = panel3.add("group", undefined, {name: "group5"}); 
+    group5.orientation = "row"; 
+    group5.alignChildren = ["left","center"]; 
+    group5.spacing = 10; 
+    group5.margins = 0; 
+
+var statictext5 = group5.add("statictext", undefined, undefined, {name: "statictext5"}); 
+    statictext5.helpTip = "The max line width. You should make this the width of the material you're using."; 
+    statictext5.text = "Max Line Width"; 
+    statictext5.preferredSize.width = 120; 
+
+var edittext5 = group5.add('edittext {properties: {name: "edittext5"}}'); 
+    edittext5.text = "500"; 
+    edittext5.preferredSize.width = 150; 
+
 // DIALOG
 // ======
+var checkbox1 = dialog.add("checkbox", undefined, undefined, {name: "checkbox1"}); 
+    checkbox1.helpTip = "Use this for text which is always wider then heigh"; 
+    checkbox1.text = "Rotate Designs"; 
 
-var Submit = dialog.add("button", undefined, undefined, {name: "Submit"}); 
-Submit.text = "Submit"; 
-Submit.alignment = ["center","center"]; 
+    var Submit = dialog.add("button", undefined, undefined, {name: "Submit"}); 
+    Submit.text = "Submit"; 
+    Submit.alignment = ["center","center"]; 
 
-
-var button2 = dialog.add("button", undefined, undefined, {name: "button2"}); 
-    button2.text = "Cancel"; 
-    button2.alignment = ["center","center"]; 
+// GROUP6
+// ======
+var group6 = dialog.add("group", undefined, {name: "group6"}); 
+    group6.orientation = "row"; 
+    group6.alignChildren = ["left","center"]; 
+    group6.spacing = 10; 
+    group6.margins = 0; 
 
     
-Submit.onClick = function(){	 
-    var maxWidth = parseInt(edittext1.text)
-    var maxHeight = parseInt(edittext2.text)
 
-    maxWidthMaxHeight(maxWidth, maxHeight)
-    tile()
+var button2 = group6.add("button", undefined, undefined, {name: "button2"}); 
+    button2.text = "Cancel"; 
+
+
+
+
+    // this runs the scripts on go.
+    
+Submit.onClick = function(){	 
+    var maxWidth = parseInt(edittext1.text);
+    var maxHeight = parseInt(edittext2.text);
+
+    maxWidthMaxHeight(maxWidth, maxHeight);
+
+    var lineWidth = parseInt(edittext5.text);
+    var vSpacing = parseInt(edittext4.text);
+    var hSpacing = parseInt(edittext3.text);
+    tile(lineWidth, vSpacing, hSpacing);
     
     dialog.close();
 }
@@ -102,17 +191,17 @@ dialog.show();
 
 
 
-function tile() {
+function tile(lineWidth, vSpacing, HSpacing) {
     var fullWidth = 0
 
-    var maxLineWidth = convertMMtoPT(500) // get from user, max width of a line
+    var maxLineWidth = convertMMtoPT(lineWidth) // get from user, max width of a line
     var highest = 0
     var height = highest
     
     for (var i = 0; i < docRef.groupItems.length; i++) {
       
         if (fullWidth + docRef.groupItems[i].width > maxLineWidth) {
-            height += (highest + convertMMtoPT(25)) // This makes next row heigher with a gap
+            height += (highest + convertMMtoPT(vSpacing)) // This makes next row heigher with a gap
             // Reset the heightest height and width.
             highest = 0
             fullWidth = 0
@@ -123,7 +212,7 @@ function tile() {
 
         
         docRef.groupItems[i].position = [fullWidth, docRef.groupItems[i].height + height] // Space out the items Evently
-        fullWidth += docRef.groupItems[i].width + convertMMtoPT(25) // the plus here is how much space is added between items. Get this from user input.
+        fullWidth += docRef.groupItems[i].width + convertMMtoPT(HSpacing) // the plus here is how much space is added between items. Get this from user input.
 
         if (docRef.groupItems[i].height > highest) {
             highest = docRef.groupItems[i].height
