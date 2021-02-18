@@ -42,8 +42,10 @@ var group1 = panel1.add("group", undefined, {name: "group1"});
 var statictext2 = group1.add("statictext", undefined, undefined, {name: "statictext2"}); 
     statictext2.helpTip = "in mm"; 
     statictext2.text = "Max Width:"; 
+    statictext2.preferredSize.width = 75; 
 
 var edittext1 = group1.add('edittext {properties: {name: "edittext1"}}'); 
+    edittext1.preferredSize.width = 150; 
 
 // GROUP2
 // ======
@@ -55,14 +57,17 @@ var group2 = panel1.add("group", undefined, {name: "group2"});
 
 var statictext3 = group2.add("statictext", undefined, undefined, {name: "statictext3"}); 
     statictext3.text = "Max Height:"; 
+    statictext3.preferredSize.width = 75; 
 
 var edittext2 = group2.add('edittext {properties: {name: "edittext2"}}'); 
+    edittext2.preferredSize.width = 150; 
 
 // DIALOG
 // ======
 
-var Submit = group1.add("button", undefined, undefined, {name: "Submit"}); 
+var Submit = dialog.add("button", undefined, undefined, {name: "Submit"}); 
 Submit.text = "Submit"; 
+Submit.alignment = ["center","center"]; 
 
 
 var button2 = dialog.add("button", undefined, undefined, {name: "button2"}); 
