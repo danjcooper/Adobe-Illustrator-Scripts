@@ -1,19 +1,10 @@
 var docRef = app.activeDocument;
 
 
-
-//! Start of Pop up Box 
-
-
 /*
-Code for Import https://scriptui.joonas.me — (Triple click to select): 
+UI Imported from https://scriptui.joonas.me
 */
 
-
-/*
-Code for Import https://scriptui.joonas.me — (Triple click to select): 
-{"activeId":7,"items":{"item-0":{"id":0,"type":"Dialog","parentId":false,"style":{"enabled":true,"varName":null,"windowType":"Dialog","creationProps":{"su1PanelCoordinates":false,"maximizeButton":false,"minimizeButton":false,"independent":false,"closeButton":true,"borderless":false,"resizeable":false},"text":"Dialog","preferredSize":[0,0],"margins":16,"orientation":"column","spacing":10,"alignChildren":["center","top"]}},"item-1":{"id":1,"type":"Panel","parentId":0,"style":{"enabled":true,"varName":null,"creationProps":{"borderStyle":"etched","su1PanelCoordinates":false},"text":"Max Size Info","preferredSize":[300,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-3":{"id":3,"type":"Panel","parentId":0,"style":{"enabled":true,"varName":null,"creationProps":{"borderStyle":"etched","su1PanelCoordinates":false},"text":"Spacing Info","preferredSize":[300,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-4":{"id":4,"type":"Group","parentId":1,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["right","center"],"alignment":null}},"item-5":{"id":5,"type":"EditText","parentId":4,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-6":{"id":6,"type":"StaticText","parentId":4,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Max Width","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-7":{"id":7,"type":"StaticText","parentId":9,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Max Height","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-8":{"id":8,"type":"EditText","parentId":9,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-9":{"id":9,"type":"Group","parentId":1,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-10":{"id":10,"type":"StaticText","parentId":12,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Horizontal Spacing","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-11":{"id":11,"type":"EditText","parentId":12,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":"top","helpTip":null}},"item-12":{"id":12,"type":"Group","parentId":3,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-13":{"id":13,"type":"Group","parentId":3,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-14":{"id":14,"type":"StaticText","parentId":13,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Vertical Spacing","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":null}},"item-15":{"id":15,"type":"EditText","parentId":13,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-16":{"id":16,"type":"Checkbox","parentId":0,"style":{"enabled":true,"varName":null,"text":"Rotate Designs","preferredSize":[0,0],"alignment":null,"helpTip":"Use this for text which is always wider then heigh","checked":false}},"item-17":{"id":17,"type":"Panel","parentId":0,"style":{"enabled":true,"varName":null,"creationProps":{"borderStyle":"etched","su1PanelCoordinates":false},"text":"Document Settings","preferredSize":[300,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-18":{"id":18,"type":"Group","parentId":17,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-19":{"id":19,"type":"EditText","parentId":18,"style":{"enabled":true,"varName":null,"creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"EditText","justify":"left","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-20":{"id":20,"type":"StaticText","parentId":18,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Max Line Width","justify":"left","preferredSize":[120,0],"alignment":null,"helpTip":"The max line width. You should make this the width of the material you're using."}},"item-21":{"id":21,"type":"Group","parentId":0,"style":{"enabled":true,"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-22":{"id":22,"type":"Button","parentId":21,"style":{"enabled":true,"varName":null,"text":"Submit","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-23":{"id":23,"type":"Button","parentId":21,"style":{"enabled":true,"varName":null,"text":"Cancel","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}}},"order":[0,1,4,6,5,9,7,8,3,12,10,11,13,14,15,17,18,20,19,16,21,23,22],"settings":{"importJSON":true,"indentSize":false,"cepExport":false,"includeCSSJS":true,"showDialog":true,"functionWrapper":false,"afterEffectsDockable":false,"itemReferenceList":"None"}}
-*/ 
 
 // DIALOG
 // ======
@@ -88,6 +79,7 @@ var statictext3 = group3.add("statictext", undefined, undefined, {name: "statict
 
 var edittext3 = group3.add('edittext {properties: {name: "edittext3"}}'); 
     edittext3.preferredSize.width = 150; 
+    edittext3.text = 10;
     edittext3.alignment = ["left","top"]; 
 
 // GROUP4
@@ -104,6 +96,7 @@ var statictext4 = group4.add("statictext", undefined, undefined, {name: "statict
 
 var edittext4 = group4.add('edittext {properties: {name: "edittext4"}}'); 
     edittext4.preferredSize.width = 150; 
+    edittext4.text = 30;
 
 // PANEL3
 // ======
@@ -164,6 +157,8 @@ Submit.onClick = function(){
     var maxWidth = parseInt(edittext1.text);
     var maxHeight = parseInt(edittext2.text);
 
+    maxWidthMaxHeight(maxWidth, maxHeight);
+    organiseLayersByHeight()
     maxWidthMaxHeight(maxWidth, maxHeight);
 
     var lineWidth = parseInt(edittext5.text);
@@ -267,6 +262,62 @@ for (var i = 0; i < docRef.groupItems.length; i++) {
 
 
 // * Supporting Functions
+
+
+function organiseLayersByHeight() {
+    
+
+var heights = []
+
+for (var i = 0 ; i < docRef.groupItems.length ; i++) {
+    heights.push(Math.ceil(docRef.groupItems[i].height * 0.352778))
+}
+heights = heights.sort()
+
+
+
+//! get an array of unique values
+
+var uniqueHeights = []
+
+for (var i = 0 ; i < heights.length ; i++) {
+    if (!isInArr(heights[i], uniqueHeights)) {
+        uniqueHeights.push(heights[i])
+    }
+}
+
+
+uniqueHeights = uniqueHeights.reverse()
+
+
+// ! If they match the first thing in the array push them to the top level
+
+for (var i = 0 ; i <  uniqueHeights.length ; i++) {
+    
+    for (var j = 0 ; j < docRef.groupItems.length ; j++) {
+        
+        if (Math.ceil(docRef.groupItems[j].height * 0.352778) == uniqueHeights[i]) {
+            
+            docRef.groupItems[j].zOrder(ZOrderMethod.BRINGTOFRONT)
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+function isInArr(input, arr) {
+    for (var i = 0 ; i < arr.length ; i++) {
+        if (input == arr[i]) {
+            return true
+        }
+    }
+    return false
+}
 
 function convertMMtoPT(input) {
     return input / 0.352778

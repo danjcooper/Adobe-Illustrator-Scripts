@@ -1,6 +1,8 @@
 var docRef = app.activeDocument
 
-alert(docRef.groupItems.length)
+
+function organiseLayersByHeight() {
+    
 
 var heights = []
 
@@ -8,7 +10,7 @@ for (var i = 0 ; i < docRef.groupItems.length ; i++) {
     heights.push(Math.ceil(docRef.groupItems[i].height * 0.352778))
 }
 heights = heights.sort()
-alert(heights)
+
 
 
 //! get an array of unique values
@@ -21,28 +23,25 @@ for (var i = 0 ; i < heights.length ; i++) {
     }
 }
 
-alert(uniqueHeights)
+
+uniqueHeights = uniqueHeights.reverse()
 
 
 // ! If they match the first thing in the array push them to the top level
 
-for (var i = 0 ; i < docRef.groupItems.length ; i++) {
+for (var i = 0 ; i <  uniqueHeights.length ; i++) {
     
-    for (var j = 0 ; j < uniqueHeights.length ; j++) {
+    for (var j = 0 ; j < docRef.groupItems.length ; j++) {
         
-        if (Math.ceil(docRef.groupItems[i].height * 0.352778) == uniqueHeights[j]) {
+        if (Math.ceil(docRef.groupItems[j].height * 0.352778) == uniqueHeights[i]) {
             
-            docRef.groupItems[i].zOrder(ZOrderMethod.BRINGTOFRONT)
+            docRef.groupItems[j].zOrder(ZOrderMethod.BRINGTOFRONT)
         }
     }
 }
 
-
-// test if the order has been changed
-
-for (var i = 0 ; i < docRef.groupItems.length ; i++) {
-    alert(Math.ceil(docRef.groupItems[i].height * 0.352778))
 }
+
 
 
 
@@ -56,3 +55,5 @@ function isInArr(input, arr) {
     }
     return false
 }
+
+organiseLayersByHeight()
