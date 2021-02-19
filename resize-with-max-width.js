@@ -171,20 +171,9 @@ Submit.onClick = function(){
 
 dialog.show();
 
-
-
-
-
 //! End of Pop up Box 
 
-
-
-
 //! Start of main script
-
-
-
-
 
 function tile(lineWidth, vSpacing, HSpacing) {
     var fullWidth = 0
@@ -220,10 +209,6 @@ function tile(lineWidth, vSpacing, HSpacing) {
 
     }
 }
-
-
-
-    
 
 
 function maxWidthMaxHeight(maxWidth, maxHeight) {
@@ -266,48 +251,38 @@ for (var i = 0; i < docRef.groupItems.length; i++) {
 
 function organiseLayersByHeight() {
     
-
 var heights = []
 
 for (var i = 0 ; i < docRef.groupItems.length ; i++) {
-    heights.push(Math.ceil(docRef.groupItems[i].height * 0.352778))
+    heights.push(Math.ceil(docRef.groupItems[i].height * 0.352778)) //  push all the heights to amn array
 }
-heights = heights.sort()
+heights = heights.sort() // organize them 
 
-
-
-//! get an array of unique values
+// get an array of unique values
 
 var uniqueHeights = []
 
 for (var i = 0 ; i < heights.length ; i++) {
     if (!isInArr(heights[i], uniqueHeights)) {
-        uniqueHeights.push(heights[i])
+        uniqueHeights.push(heights[i]) // push the unique heights to an array
     }
 }
 
 
-uniqueHeights = uniqueHeights.reverse()
+uniqueHeights = uniqueHeights.reverse() // reverse it so the biggest ones are first.
 
 
-// ! If they match the first thing in the array push them to the top level
+// If they match the first thing in the array push them to the top level
 
 for (var i = 0 ; i <  uniqueHeights.length ; i++) {
-    
     for (var j = 0 ; j < docRef.groupItems.length ; j++) {
-        
         if (Math.ceil(docRef.groupItems[j].height * 0.352778) == uniqueHeights[i]) {
-            
-            docRef.groupItems[j].zOrder(ZOrderMethod.BRINGTOFRONT)
+            docRef.groupItems[j].zOrder(ZOrderMethod.BRINGTOFRONT) // If it matches the size in he array push the item to the top of the document 
         }
     }
 }
 
 }
-
-
-
-
 
 
 function isInArr(input, arr) {
