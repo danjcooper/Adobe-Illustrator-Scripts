@@ -6,7 +6,7 @@ function setDate() {
   var monthIndex = date.getMonth();
   var year = date.getFullYear();
 
-  // priocess the month
+  // process the month
   monthIndex = monthIndex + 1; // it returns the month as january being 0, so this just changes it so jan = 1
 
   if (monthIndex < 10) {
